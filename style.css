@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Calculator Container */
+.calc-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+}
+
+/* Display Screen */
+.result-box {
+    height: 80px;
+    background: #111;
+    color: #0f0;
+    font-size: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow-x: auto;
+    box-shadow: inset 0 0 10px rgba(0,255,0,0.4);
+}
+
+/* Buttons Container */
+.btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    flex: 1 0 22%;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+/* Active Click */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Special Buttons */
+#btn1 {
+    background: #ff4d4d;
+}
+
+#btn20 {
+    background: #00c853;
+}
+
+#btn4, #btn8, #btn12, #btn16 {
+    background: #ff9800;
+}
